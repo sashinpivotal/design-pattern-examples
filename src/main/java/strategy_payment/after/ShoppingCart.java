@@ -10,8 +10,11 @@ public class ShoppingCart {
 	public ShoppingCart(){
 		this.items=new ArrayList<Item>();
 	}
-	
-	// Strategy object is passed as an argument
+
+	// GOOD: Code now uses strategy pattern.
+	// This code does not need to be changed even if
+	// we introduce a new strategy in the future,
+	// for example, Apple pay.
 	public void pay(IPaymentStrategy paymentMethod){
 		int amount = calculateTotal();
 		paymentMethod.pay(amount);
