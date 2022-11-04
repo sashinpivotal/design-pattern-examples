@@ -6,5 +6,4 @@ public class Client {
 		System.out.println(shoppingCart.computeItemPrice(10.0, 1, DiscountType.WEEKDAY_HOUR));
 		System.out.println(shoppingCart.computeItemPrice(8.0, 3, DiscountType.WEEKEND_HOUR));
 	}
-
 }

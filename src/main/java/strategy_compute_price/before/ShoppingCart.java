@@ -16,7 +16,7 @@ class ShoppingCart {
 		// BAD: This code needs to be changed whenever we
 		// need to introduce a new discount type, thus
 		// introducing a new algorithm (computing actual price).
-		// This violates "Open close" design principle.
+		// This violates "Open-Closed" design principle.
 		if (discountType == DiscountType.WEEKDAY_HOUR){
 			actualPrice = price * quantity * (1.0 - WEEKDAY_DISCOUNT_RATE);
 		}
@@ -29,11 +29,11 @@ class ShoppingCart {
 	}
 
 	public double computeTotalPrice() {
-		double sum = 0;
+		double totalPrice = 0;
 		for (Double i : items) {
-			sum += i;
+			totalPrice += i;
 		}
-		return sum;
+		return totalPrice;
 	}
 
 }

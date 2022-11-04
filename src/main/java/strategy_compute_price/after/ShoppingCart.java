@@ -25,11 +25,11 @@ class ShoppingCart {
 	}
 
 	public double computeTotalPrice() {
-		double sum = 0;
+		double totalPrice = 0;
 		for (Double i : items) {
-			sum += i;
+			totalPrice += i;
 		}
-		return sum;
+		return totalPrice;
 	}
 
 }
