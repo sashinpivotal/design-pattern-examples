@@ -7,7 +7,7 @@ public class Context {
 		String result ="";
 		
 		// BAD: every time a new algorithm is added, this code
-		// needs to be modified - violation of open close principle
+		// needs to be modified - violation of Open-Closed principle
 		switch (algorithm) {
 		case "algorithm1":
 			result = new Algorithm1().doSomething(arg1, arg2);
