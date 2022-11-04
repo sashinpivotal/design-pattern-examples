@@ -1,6 +1,6 @@
 package template_pizza.after;
 
-public class ChicagoPizza extends Pizza {
+public class ChicagoPizza extends PizzaWithTemplatePattern {
 	
 	public ChicagoPizza(String name) {
 		super(name);

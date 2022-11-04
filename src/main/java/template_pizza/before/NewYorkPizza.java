@@ -22,7 +22,8 @@ public class NewYorkPizza extends Pizza {
 		System.out.println("Serve " + getName() + " in New York style");
 	}
 	
-	// BAD: duplicate code
+	// BAD: duplicate code of takePayment method in both
+	// ChicagoPizza and NewYorkPizza class
 	public void takePayment() {
 		System.out.println("Take payment");
 	}

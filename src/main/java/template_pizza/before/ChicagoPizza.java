@@ -21,17 +21,19 @@ public class ChicagoPizza extends Pizza {
 	void serve() {
 		System.out.println("Serve " + getName() + " in Chicago style");
 	}
-	
-	// BAD: duplicate code
+
+	// BAD: duplicate code of takePayment method in both
+	// ChicagoPizza and NewYorkPizza class
 	public void takePayment() {
 		System.out.println("Take payment");
 	}
 	
-	// BAD: We wanted both NewYork pizza and Chicago pizza
-	// to take the same steps to make.  But here There is no way 
-	// impose common behavior - for example, in Chicago, the step of bake()
-	// is omitted below. Also, "addTopping" step is done before "prepare" step.
-	// pizza.bake();
+	// BAD: We wanted both NewYork pizza and Chicago
+	// pizza to take the same steps to make.  But here
+	// there is no way impose common behavior - for
+	// example, in Chicago, the step of bake()
+	// is omitted below. Also, "addTopping" step
+	// is done before "prepare" step.
 	public void handleOrder(){
 		takePayment();
 		addTopping();

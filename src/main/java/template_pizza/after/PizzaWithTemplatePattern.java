@@ -1,10 +1,10 @@
 package template_pizza.after;
 
-public abstract class Pizza {
+public abstract class PizzaWithTemplatePattern {
 	
 	private String name;
 	
-	public Pizza(String name) {
+	public PizzaWithTemplatePattern(String name) {
 		super();
 		this.name = name;
 	}
