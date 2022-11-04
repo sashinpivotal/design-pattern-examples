@@ -4,7 +4,7 @@ class Client {
 
 	public static void main(String[] args) {
 	
-		// The Builder Pattern allows you to build complex
+		// GOOD: The Builder Pattern allows you to build complex
 		// objects in a series of steps. 
 		CarBuilder carBuilder = new CarBuilder();
 		Car carA = carBuilder.newCar()
