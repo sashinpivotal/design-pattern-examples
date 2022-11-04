@@ -11,10 +11,10 @@ public class Client {
 		shoppingCart.addItem(item1);
 		shoppingCart.addItem(item2);
 
-		// pay by paypal
+		// pay by Paypal
 		shoppingCart.pay("paypal");
 
-		// pay by credit card
+		// pay by Credit card
 		shoppingCart.pay("creditcard");
 	}
 

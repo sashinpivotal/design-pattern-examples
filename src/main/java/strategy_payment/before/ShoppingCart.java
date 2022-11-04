@@ -25,7 +25,7 @@ public class ShoppingCart {
 
     // BAD: If new payment method needs to be supported,
     // this code needs to be modified, which violates
-    // "Open Close" design principle.
+    // "Open-Closed" design principle.
     public void pay(String paymentMethod) {
         int amount = calculateTotal();
 

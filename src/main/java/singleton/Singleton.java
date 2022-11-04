@@ -5,7 +5,7 @@ public class Singleton {
 	private int counter = 0;
 	
 	// Create only instance that is available
-	private static Singleton instance = new Singleton();
+	private static final Singleton instance = new Singleton();
 
 	// Make constructor private to prevent direct instantiation
 	private Singleton() {

@@ -9,7 +9,7 @@ public class Client {
 			toyToCreate = args[0];
 		}
 		
-		// GOOD: Object creation is delegated to a factory
+		// GOOD: Object creation is delegated to a simple factory
 		Toy toy = SimpleToyFactory.createToy(toyToCreate);
 		
 		// GOOD: Business logic is not mixed up with object creation detail
