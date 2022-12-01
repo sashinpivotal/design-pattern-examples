@@ -32,7 +32,7 @@ public class ShoppingCart {
         if (paymentMethod.equals("paypal")) {
             new Paypal("myemail@example.com", "mypwd")
                     .pay(amount);
-        } else {
+        } else if (paymentMethod.equals("credit-card")){
             new CreditCard("Sang Shin",
                     "1234567890123456",
                     "786",

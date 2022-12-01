@@ -15,7 +15,7 @@ public class Client {
 		shoppingCart.pay("paypal");
 
 		// pay by Credit card
-		shoppingCart.pay("creditcard");
+		shoppingCart.pay("credit-card");
 	}
 
 }

@@ -15,6 +15,7 @@ public class Client {
 
         // GOOD: payment scheme can be determined during runtime
         shoppingCart.pay(decideWhichPaymentSchemeToUse());
+        shoppingCart.pay(decideWhichPaymentSchemeToUse());
 
     }
 
@@ -30,8 +31,10 @@ public class Client {
                         "1234567890123456", "786", "12/15");
     }
 
+    private static boolean toggle = false;
     private static boolean callSomeBusinessLogic() {
-        return true;
+        toggle = !toggle;
+        return toggle;
     }
 
 }
