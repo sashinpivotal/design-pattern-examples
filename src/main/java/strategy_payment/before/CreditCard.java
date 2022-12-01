@@ -15,7 +15,8 @@ public class CreditCard  {
 	}
 	
 	public void pay(int amount) {
-		System.out.println(amount +" dollars paid with credit/debit card");
+
+		System.out.println(amount +" dollars paid with credit card");
 	}
 
 }
