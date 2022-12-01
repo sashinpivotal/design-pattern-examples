@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ShoppingCart {
 
-	List<Item> items;
+	private List<Item> items;
 
 	public ShoppingCart(){
 		this.items=new ArrayList<Item>();
@@ -16,7 +16,7 @@ public class ShoppingCart {
 	// we introduce a new strategy in the future,
 	// for example, Apple pay.
 	public void pay(IPaymentStrategy paymentMethod){
-		int amount = calculateTotal();
+		int amount = calculateTotalPrice();
 		paymentMethod.pay(amount);
 	}
 
@@ -24,12 +24,12 @@ public class ShoppingCart {
 		this.items.add(item);
 	}
 
-	public int calculateTotal(){
-		int sum = 0;
+	public int calculateTotalPrice(){
+		int totalPrice = 0;
 		for(Item item : items){
-			sum += item.getPrice();
+			totalPrice += item.getPrice();
 		}
-		return sum;
+		return totalPrice;
 	}
 
 }

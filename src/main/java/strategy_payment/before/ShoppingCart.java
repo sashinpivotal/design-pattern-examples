@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ShoppingCart {
 
-    List<Item> items;
+    private List<Item> items;
 
     public ShoppingCart() {
         this.items = new ArrayList<Item>();
@@ -15,19 +15,19 @@ public class ShoppingCart {
         this.items.add(item);
     }
 
-    public int calculateTotal() {
-        int sum = 0;
+    public int calculateTotalPrice() {
+        int totalPrice = 0;
         for (Item item : items) {
-            sum += item.getPrice();
+            totalPrice += item.getPrice();
         }
-        return sum;
+        return totalPrice;
     }
 
     // BAD: If new payment method needs to be supported,
     // this code needs to be modified, which violates
     // "Open-Closed" design principle.
     public void pay(String paymentMethod) {
-        int amount = calculateTotal();
+        int amount = calculateTotalPrice();
 
         if (paymentMethod.equals("paypal")) {
             new Paypal("myemail@example.com", "mypwd")
