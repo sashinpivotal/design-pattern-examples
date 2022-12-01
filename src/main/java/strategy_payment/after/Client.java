@@ -31,10 +31,10 @@ public class Client {
                         "1234567890123456", "786", "12/15");
     }
 
-    private static boolean toggle = false;
+    private static boolean trueOrFalseToggle = false;
     private static boolean callSomeBusinessLogic() {
-        toggle = !toggle;
-        return toggle;
+        trueOrFalseToggle = !trueOrFalseToggle;
+        return trueOrFalseToggle;
     }
 
 }
